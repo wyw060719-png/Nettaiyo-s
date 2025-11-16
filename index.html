@@ -4,138 +4,252 @@
   <meta charset="UTF-8">
   <title>Functions in the Amusement Park</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- W3.CSS -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <style>
-    body {font-family: "Segoe UI", Arial, sans-serif;}
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top, #ffeefc 0%, #f4f9ff 40%, #f7fbff 100%);
+    }
     iframe {
       width: 100%;
-      max-width: 500px;
-      height: 500px;
-      border: 1px solid #ccc;
+      max-width: 520px;
+      height: 480px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
     }
     .section {
       margin-bottom: 64px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    h2 {
+      margin-top: 0;
+      padding-left: 10px;
+      border-left: 5px solid #ffb347;
+    }
+    .title-bar {
+      background: linear-gradient(120deg, #ff9a9e 0%, #fecfef 30%, #a1c4fd 100%);
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .subtitle {
+      opacity: 0.9;
+      letter-spacing: 0.03em;
+    }
+    .trans-title {
+      font-weight: 600;
+      margin-top: 16px;
+      color: #0b5394;
+    }
+    .domain-box {
+      background: #f1f8ff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 0.95em;
+      border: 1px dashed #b3d7ff;
+    }
+    .domain-label {
+      font-weight: 600;
+    }
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.8em;
+      background: #ffefc6;
+      color: #8a5a00;
+      margin-bottom: 10px;
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .section-emoji {
+      font-size: 1.4em;
     }
   </style>
 </head>
 
 <body class="w3-light-grey">
 
-  <header class="w3-container w3-center w3-padding-64 w3-blue">
-    <h1 class="w3-xxxlarge">Functions in the Amusement Park</h1>
+  <!-- Page Title -->
+  <header class="w3-container w3-center w3-padding-64 title-bar">
+    <h1 class="w3-xxxlarge">🎡 Functions in the Amusement Park 🎢</h1>
+    <p class="w3-large subtitle">Exploring transformations, one ride at a time.</p>
   </header>
 
   <div class="w3-content w3-padding">
 
-    <!-- 1 -->
+    <!-- 1. Rational -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>1. 1/x</h2>
+      <div class="section-header">
+        <h2>1. Rational Function (1/x)</h2>
+        <span class="section-emoji">🎯</span>
+      </div>
+      <span class="tag">Parent: y = 1/x</span>
       <iframe src="https://www.desmos.com/calculator/18gq7d8xuy?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        I began with the parent function y = 1/x. Replacing x with x−9.5 shifts the vertical asymptote to the right, placing the curve exactly where I want it in the layout. The large numerator creates a strong vertical stretch, making the branch much steeper, and the +10 raises the entire curve so it sits higher above the axis. These adjustments help the shape match the position and height of the surrounding structures.
+        I started with <code>y = 1/x</code>. Replacing <code>x</code> with <code>x − 9.5</code> shifts the vertical asymptote to <code>x = 9.5</code>, moving the branch into the needed position. Changing the numerator to <code>6.96</code> creates a vertical stretch and increases steepness. Adding <code>10</code> shifts the graph upward so its height aligns with surrounding structures.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-12.1, 4.3) <b>Range:</b> (-3.385, 6.778)</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain:</span> (-12.1, 4.3) &nbsp; | &nbsp;
+        <span class="domain-label">Range:</span> (-3.385, 6.778)
+      </div>
     </div>
 
-    <!-- 2 -->
+    <!-- 2. 1/x² double structure -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>2. 1/x²</h2>
+      <div class="section-header">
+        <h2>2. Double-piece 1/x² Structure</h2>
+        <span class="section-emoji">🏗️</span>
+      </div>
+      <span class="tag">Parent: y = 1/x²</span>
       <iframe src="https://www.desmos.com/calculator/llfczqw7fe?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        Both branches come from the same transformed parent y = 1/x². The shift x+0.4 moves the entire curve slightly left, aligning the two branches with the positions where I want the support legs to stand. The factor 6.7 makes each branch fall more sharply, and −3.5 lowers the whole structure to a suitable base height. Choosing two separate intervals allows the two pieces to stand apart while still forming one symmetrical support shape.
+        Both pieces come from <code>y = 1/x²</code>. Using <code>x + 0.4</code> shifts the graph left so the two branches sit at the planned support locations. The coefficient <code>6.7</code> increases vertical stretch, and subtracting <code>3.5</code> lowers the structure. Using two intervals makes the two sides symmetric.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-4, -1.32) <b>Range:</b> (-2.983, 4.416)</p>
-      <p><b>Domain:</b> (0.53, 3) <b>Range:</b> (-2.920, 4.247)</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain (left):</span> (-4, -1.32) &nbsp; | &nbsp;
+        <span class="domain-label">Range (left):</span> (-2.983, 4.416)<br>
+        <span class="domain-label">Domain (right):</span> (0.53, 3) &nbsp; | &nbsp;
+        <span class="domain-label">Range (right):</span> (-2.920, 4.247)
+      </div>
     </div>
 
-    <!-- 3 -->
+    <!-- 3. Polynomial -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>3. A polynomial of degree higher than 2</h2>
+      <div class="section-header">
+        <h2>3. Polynomial Coaster</h2>
+        <span class="section-emoji">🎢</span>
+      </div>
+      <span class="tag">Polynomial: degree &gt; 2</span>
       <iframe src="https://www.desmos.com/calculator/ac7zte78lt?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        I combined a cubic and a quadratic shape to form a smooth roller-coaster-like hill. Using x−0.6 shifts the central peak to the middle of the ride. The negative cubic coefficient flips and softens the slope, while the quadratic term lifts and rounds the top. Subtracting 2.2 lowers the entire track to the height I want for the design.
+        I combined a cubic term and a quadratic term. Using <code>x − 0.6</code> shifts the whole graph right so the hill is centered. The <code>−0.2</code> coefficient reflects and flattens the cubic part, reducing the slope. The quadratic term shapes the top of the hill. Subtracting <code>2.2</code> lowers the entire track to the desired level.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-1.3, 5.5) <b>Range:</b> [-2.200, 2.782)</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain:</span> (-1.3, 5.5) &nbsp; | &nbsp;
+        <span class="domain-label">Range:</span> [-2.200, 2.782)
+      </div>
     </div>
 
-    <!-- 4 -->
+    <!-- 4. Cosecant -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>4. A trigonometric function with an asymptote</h2>
+      <div class="section-header">
+        <h2>4. Cosecant Function</h2>
+        <span class="section-emoji">🎪</span>
+      </div>
+      <span class="tag">Parent: y = csc(x)</span>
       <iframe src="https://www.desmos.com/calculator/gg17tpbrnh?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        Starting with y = csc(x), I shifted the graph right using x−2.6 so the asymptotes line up with the structure. The factor 0.6 stretches the graph horizontally, increasing the spacing between branches and giving a wider look. The +2.2 lifts the entire curve to the height needed for the ride.
+        Starting from <code>y = csc(x)</code>, replacing <code>x</code> with <code>x − 2.6</code> shifts the asymptotes right. The factor <code>0.6</code> stretches the graph horizontally, increasing the spacing between branches. Adding <code>2.2</code> shifts the whole curve upward to match the height of the design.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-2.25, 2.21) <b>Range:</b> (-2.157, 1.200）</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain:</span> (-2.25, 2.21) &nbsp; | &nbsp;
+        <span class="domain-label">Range:</span> (-2.157, 1.200)
+      </div>
     </div>
 
-    <!-- 5 -->
+    <!-- 5. Sinusoidal -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>5. A sinusoidal function (sin or cos)</h2>
+      <div class="section-header">
+        <h2>5. Sinusoidal Function</h2>
+        <span class="section-emoji">🌊</span>
+      </div>
+      <span class="tag">Parent: y = sin(x)</span>
       <iframe src="https://www.desmos.com/calculator/q8bb6mb9c6?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        This graph comes from the parent y = sin(x). The factor 1.1 slightly increases the frequency so more waves appear in the same space. Shifting to x−2.9 positions the wave where I want it, the amplitude 0.4 makes the oscillations smaller and gentler, and the +1 lifts the whole wave to the correct height.
+        The parent is <code>y = sin(x)</code>. The factor <code>1.1</code> reduces the period, giving more cycles in the same width. Using <code>x − 2.9</code> shifts the wave right. The amplitude <code>0.4</code> decreases the vertical size, and adding <code>1</code> raises the midline.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-4.23, 6) <b>Range:</b> [0.600, 1.400]</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain:</span> (-4.23, 6) &nbsp; | &nbsp;
+        <span class="domain-label">Range:</span> [0.600, 1.400]
+      </div>
     </div>
 
-    <!-- 6 -->
+    <!-- 6. Logarithmic -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>6. A logarithmic function</h2>
+      <div class="section-header">
+        <h2>6. Logarithmic Function</h2>
+        <span class="section-emoji">📉</span>
+      </div>
+      <span class="tag">Parent: y = log(x)</span>
       <iframe src="https://www.desmos.com/calculator/fl8db2gtx1?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        Using the parent y = log(x), I replaced x with x+2.9 to move the asymptote left and reveal more of the curve on the right. The large negative coefficient flips and steepens the graph, creating a stronger downward ramp. Adding 4 raises the whole function to match the height of the other structures.
+        From the parent <code>y = log(x)</code>, replacing <code>x</code> with <code>x + 2.9</code> shifts the asymptote left. The coefficient <code>−9.3</code> flips and vertically stretches the graph, turning the slow rise into a steep drop. Adding <code>4</code> moves the curve upward to the intended height.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-0.75, 2.5) <b>Range:</b> (-2.811, 0.908)</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain:</span> (-0.75, 2.5) &nbsp; | &nbsp;
+        <span class="domain-label">Range:</span> (-2.811, 0.908)
+      </div>
     </div>
 
-    <!-- 7 -->
+    <!-- 7. Exponential -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>7. An exponential function</h2>
+      <div class="section-header">
+        <h2>7. Exponential Function</h2>
+        <span class="section-emoji">🚀</span>
+      </div>
+      <span class="tag">Exponential model</span>
       <iframe src="https://www.desmos.com/calculator/28o6o3mfrk?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        This is a slowly increasing exponential curve. Shifting to x−1.4 moves the main rising section to the center. The small exponent coefficient stretches the rise horizontally, creating a smoother growth. The factor 2.4 sets a suitable starting height for the function.
+        This function comes from an exponential base. The exponent contains <code>x − 1.4</code>, which shifts the growth phase right. The factor <code>0.1</code> slows the growth rate and stretches the curve horizontally. The coefficient <code>2.4</code> determines the initial height.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-5, 8) <b>Range:</b> (0.550, 10.970)</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain:</span> (-5, 8) &nbsp; | &nbsp;
+        <span class="domain-label">Range:</span> (0.550, 10.970)
+      </div>
     </div>
 
-    <!-- 8 -->
+    <!-- 8. Secant -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>8. Additional function 1</h2>
+      <div class="section-header">
+        <h2>8. Additional Function 1 (Secant)</h2>
+        <span class="section-emoji">🛠️</span>
+      </div>
+      <span class="tag">Parent: y = sec(x)</span>
       <iframe src="https://www.desmos.com/calculator/gg17tpbrnh?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        I used the parent y = sec(x) and shifted it left with x+8.5 to place the repeating sections correctly. The factor 0.4 widens the period, giving each cup-shaped section a broader base. The coefficient 1.6 stretches the graph vertically, and −0.7 lowers it to the desired height.
+        Using the parent <code>y = sec(x)</code>, I replaced <code>x</code> with <code>x + 8.5</code> to shift the pattern left. The factor <code>0.4</code> stretches the graph horizontally, widening each secant segment. The coefficient <code>1.6</code> increases vertical scale, and subtracting <code>0.7</code> lowers the graph slightly.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> (-3.9, 2.6) <b>Range:</b> (-6.716, -2.300]</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain:</span> (-3.9, 2.6) &nbsp; | &nbsp;
+        <span class="domain-label">Range:</span> (-6.716, -2.300]
+      </div>
     </div>
 
-    <!-- 9 -->
+    <!-- 9. Combined top shape -->
     <div class="section w3-white w3-card w3-padding">
-      <h2>9. Additional function 2</h2>
+      <div class="section-header">
+        <h2>9. Additional Function 2 (Combined Top Shape)</h2>
+        <span class="section-emoji">🎠</span>
+      </div>
+      <span class="tag">Semicircle + arccos</span>
       <iframe src="https://www.desmos.com/calculator/qdrijrcrrg?embed" frameborder="0"></iframe>
-      <h4>Transformations Paragraph</h4>
+      <p class="trans-title">Transformations</p>
       <p>
-        This top structure combines two symmetric curves. The semicircle uses |x|−1 to shift and mirror the arc toward the center, forming the upper shape. The inverse-cosine curve also uses |x| for symmetry, and −π lowers it so it fits smoothly beneath the semicircle. Together they create one unified decorative top.
+        The top shape is formed by two symmetric functions. The semicircle uses <code>|x| − 1</code>, which recenters the arc and mirrors it across the y-axis. The arccos part uses <code>1 − |x|</code>, applying the same symmetry. Subtracting <code>π</code> shifts the arccos curve downward so it fits beneath the semicircle.
       </p>
-      <h4>Domain and Range Paragraph</h4>
-      <p><b>Domain:</b> [-2, 2] <b>Range:</b> [0, 1]</p>
-      <p><b>Domain:</b> [-2, 2] <b>Range:</b> [-π, 0]</p>
+      <div class="domain-box">
+        <span class="domain-label">Domain (semicircle):</span> [-2, 2] &nbsp; | &nbsp;
+        <span class="domain-label">Range (semicircle):</span> [0, 1]<br>
+        <span class="domain-label">Domain (arccos):</span> [-2, 2] &nbsp; | &nbsp;
+        <span class="domain-label">Range (arccos):</span> [−π, 0]
+      </div>
     </div>
 
   </div>
@@ -146,5 +260,7 @@
 
 </body>
 </html>
+
+
 
 
